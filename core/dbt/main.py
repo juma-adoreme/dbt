@@ -848,6 +848,7 @@ def _build_list_subparser(subparsers, base_subparser):
     sub.add_argument('--output',
                      choices=['json', 'name', 'path', 'selector'],
                      default='selector')
+    sub.add_argument('--output-keys')
 
     _add_models_argument(
         sub,
