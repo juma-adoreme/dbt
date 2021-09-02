@@ -8,8 +8,8 @@
 - Customize ls task JSON output by adding new flag `--output-keys` ([#3778](https://github.com/dbt-labs/dbt/issues/3778), [#3395](https://github.com/dbt-labs/dbt/issues/3395))
 
 ### Fixes
-
-- Support BigQuery-specific aliases `target_dataset` and `target_project` in snapshot configs ([#3694](https://github.com/dbt-labs/dbt/issues/3694), [#3834](https://github.com/dbt-labs/dbt/pull/3834), [#3838](https://github.com/dbt-labs/dbt/pull/3838))
+- Support BigQuery-specific aliases `target_dataset` and `target_project` in snapshot configs ([#3694](https://github.com/dbt-labs/dbt/issues/3694), [#3834](https://github.com/dbt-labs/dbt/pull/3834))
+- `dbt debug` shows a summary of whether all checks passed or not ([3831](https://github.com/dbt-labs/dbt/issues/3831), [3832](https://github.com/dbt-labs/dbt/issues/3831))
 
 ### Under the hood
 
@@ -23,6 +23,7 @@ Contributors:
 - [@dbrtly](https://github.com/dbrtly) ([#3834](https://github.com/dbt-labs/dbt/pull/3834))
 - [@swanderz](https://github.com/swanderz) [#3623](https://github.com/fishtown-analytics/dbt/pull/3623)
 - [@JasonGluck](https://github.com/JasonGluck) ([#3582](https://github.com/dbt-labs/dbt/pull/3582))
+- [@joellabes](https://github.com/joellabes) ([#3669](https://github.com/dbt-labs/dbt/pull/3669))
 - [@juma-adoreme](https://github.com/juma-adoreme) ([#3838](https://github.com/dbt-labs/dbt/pull/3838))
 
 ## dbt 0.21.0b2 (August 19, 2021)
