@@ -2,14 +2,14 @@
 
 ### Features
 - Add connect_timeout profile configuration for Postgres and Redshift adapters. ([#3581](https://github.com/dbt-labs/dbt/issues/3581), [#3582](https://github.com/dbt-labs/dbt/pull/3582))
-
 - Enhance BigQuery copy materialization ([#3570](https://github.com/dbt-labs/dbt/issues/3570), [#3606](https://github.com/dbt-labs/dbt/pull/3606)):
   - to simplify config (default usage of `copy_materialization='table'` if is is not found in global or local config)
   - to let copy several source tables into single target table at a time. ([Google doc reference](https://cloud.google.com/bigquery/docs/managing-tables#copying_multiple_source_tables))
+- Customize ls task JSON output by adding new flag `--output-keys` ([#3778](https://github.com/dbt-labs/dbt/issues/3778), [#3395](https://github.com/dbt-labs/dbt/issues/3395))
 
 ### Fixes
 
-- Support BigQuery-specific aliases `target_dataset` and `target_project` in snapshot configs ([#3694](https://github.com/dbt-labs/dbt/issues/3694), [#3834](https://github.com/dbt-labs/dbt/pull/3834))
+- Support BigQuery-specific aliases `target_dataset` and `target_project` in snapshot configs ([#3694](https://github.com/dbt-labs/dbt/issues/3694), [#3834](https://github.com/dbt-labs/dbt/pull/3834), [#3838](https://github.com/dbt-labs/dbt/pull/3838))
 
 ### Under the hood
 
@@ -23,6 +23,7 @@ Contributors:
 - [@dbrtly](https://github.com/dbrtly) ([#3834](https://github.com/dbt-labs/dbt/pull/3834))
 - [@swanderz](https://github.com/swanderz) [#3623](https://github.com/fishtown-analytics/dbt/pull/3623)
 - [@JasonGluck](https://github.com/JasonGluck) ([#3582](https://github.com/dbt-labs/dbt/pull/3582))
+- [@juma-adoreme](https://github.com/juma-adoreme) ([#3838](https://github.com/dbt-labs/dbt/pull/3838))
 
 ## dbt 0.21.0b2 (August 19, 2021)
 
@@ -30,7 +31,6 @@ Contributors:
 
 - Capture changes to macros in `state:modified`. Introduce new `state:` sub-selectors: `modified.body`, `modified.configs`, `modified.persisted_descriptions`, `modified.relation`, `modified.macros` ([#2704](https://github.com/dbt-labs/dbt/issues/2704), [#3278](https://github.com/dbt-labs/dbt/issues/3278), [#3559](https://github.com/dbt-labs/dbt/issues/3559))
 - Enable setting configs in schema files for models, seeds, snapshots, analyses, tests ([#2401](https://github.com/dbt-labs/dbt/issues/2401), [#3616](https://github.com/dbt-labs/dbt/pull/3616))
-- Customize ls task JSON output by adding new flag `--output-keys` ([#3778](https://github.com/dbt-labs/dbt/issues/3778), [#3395](https://github.com/dbt-labs/dbt/issues/3395))
 
 ### Fixes
 
